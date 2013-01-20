@@ -1,0 +1,18 @@
+<button ng-click="fetch()">fetch</button><br>
+<table class="table table-striped">
+    <caption>Rechnungen</caption>
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>Nummer</th>
+        <th>Text</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="note in notes">
+        <td>{{note.id}}</td>
+        <td><a href="#/notes/{{note.id}}">{{note.rechnungsnummer}}</a></td>
+        <td>{{note.rechnungstext}}</td>
+    </tr>
+    </tbody>
+</table>
